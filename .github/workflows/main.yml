@@ -20,11 +20,11 @@ jobs:
           user: root
           pass: ${{ secrets.SFTP_PASS }}
           # lftp settings
-          onlyNewer: true
+          # onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
           # Mirror command options
           localDir: '.'
-          remoteDir: '/var/www/html/wp-content/themes/vj'
-          reverse: false
-          ignoreFile: '.lftp_ignore'
+          remoteDir: '/var/www/html/wp-content/themes/vj/'
+          # reverse: false
+          # ignoreFile: '.lftp_ignore'
           options: '--verbose'
